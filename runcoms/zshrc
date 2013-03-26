@@ -16,3 +16,5 @@ alias tlog='tail -f log/development.log'
 function tloga {
   tail -f ~/Library/Logs/Pow/apps/$1.log
 }
+
+eval "$(rbenv init - --no-rehash zsh)"
