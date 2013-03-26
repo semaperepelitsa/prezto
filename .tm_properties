@@ -1,2 +1,5 @@
 [ "runcoms/z*" ]
 fileType = "source.shell"
+
+[ "functions/*" ]
+fileType = "source.shell"
