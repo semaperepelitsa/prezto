@@ -18,3 +18,7 @@ function tloga {
 }
 
 eval "$(rbenv init - --no-rehash zsh)"
+
+c() { cd ~/Code/$1; }
+_c() { _files -W ~/Code -/; }
+compdef _c c
