@@ -12,6 +12,7 @@ fi
 
 alias mkcd='mkdcd'
 alias tlog='tail -f log/development.log'
+alias git="noglob git"
 
 function tloga {
   tail -f ~/Library/Logs/Pow/apps/$1.log
