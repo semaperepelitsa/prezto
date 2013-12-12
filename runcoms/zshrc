@@ -34,3 +34,7 @@ compdef _c c
 function rst {
   touch tmp/restart.txt
 }
+
+function rails-wisp {
+  env ASSET_HOST="wisp.sema.in" rails server -p 3080 $@
+}
