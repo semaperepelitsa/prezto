@@ -45,10 +45,10 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   ~/bin
-  /usr/local/bin
-  /usr/local/sbin
   ~/.rbenv/shims
   $path
+  /usr/local/sbin
+  /usr/local/share/npm/bin
 )
 
 #
