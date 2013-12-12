@@ -22,15 +22,10 @@ function tloga {
 eval "$(rbenv init - --no-rehash zsh)"
 
 function c {
-  cd ~/Code/$1
-  local ruby_prefix=$(ruby -e 'print RbConfig::CONFIG["RUBY_BASE_NAME"], "/", RbConfig::CONFIG["ruby_version"]')
-  local bundle_dir="$PWD/.bundle/$ruby_prefix"
-  if [[ -d $bundle_dir ]]; then
-    echo "Using local gems"
-
-    export GEM_HOME=$bundle_dir
-    path=($GEM_HOME/bin $path)
+  if (($+1)); then
+    ~/Code/$1
   fi
+  path=( ./bin $path )
 }
 
 _c() { _files -W ~/Code -/; }
