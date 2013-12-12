@@ -38,3 +38,7 @@ function rst {
 function rails-wisp {
   env ASSET_HOST="wisp.sema.in" rails server -p 3080 $@
 }
+
+# Enable forward delete on Mac keyboard
+bindkey "^[[3~"  delete-char
+bindkey "^[3;5~" delete-char
